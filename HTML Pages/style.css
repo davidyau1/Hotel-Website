@@ -1,0 +1,265 @@
+@media screen {
+  body {
+    font-family: Helvetica, Calibri, serif;
+    background-color: #fff2f2;
+  }
+  input {
+    display: block;
+  }
+  select {
+    display: block;
+  }
+
+  #nav a {
+    text-decoration: none;
+    color: #4d1d18;
+  }
+
+  #nav :hover {
+    color: #555;
+  }
+
+  nav li {
+    display: inline;
+    padding: 10px;
+    padding-top: 25px;
+    font-size: 26px;
+  }
+
+  .column {
+    float: left;
+    width: 45%;
+    padding: 20px;
+  }
+
+  h1 {
+    color: #87423c;
+    font-size: 36px;
+    margin-left: auto;
+  }
+
+  h2,
+  h3,
+  h4 {
+    color: #4d1d18;
+    font-size: 24px;
+  }
+
+  p {
+    line-height: 150%;
+  }
+  span {
+    color: red;
+  }
+  footer {
+    color: #87423c;
+    padding-top: 10px;
+    clear: both;
+  }
+  footer a {
+    text-decoration: none;
+  }
+  a {
+    color: #87423c;
+  }
+  a:link {
+    color: blue;
+  }
+
+  a:visited {
+    color: red;
+  }
+
+  a:active {
+    color: purple;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  div {
+    float: left;
+    width: 100%;
+  }
+
+  textarea {
+    width: 500px;
+    height: 200px;
+  }
+  .price {
+    float: left;
+    padding: 30px;
+    border-color: darkred;
+  }
+  .nobullet {
+    list-style-type: none;
+  }
+
+  .terms {
+    clear: both;
+  }
+  .map {
+    float: left;
+    padding: 20px;
+  }
+  .contactform {
+    clear: both;
+  }
+  .listimg {
+    float: left;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 980px) {
+  nav li {
+    width: 100%;
+  }
+
+  li {
+    clear: both;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  textarea {
+    width: 100%;
+  }
+}
+
+@media print {
+  #nav a {
+    text-decoration: none;
+    color: #4d1d18;
+  }
+  form {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  nav li {
+    display: inline;
+    padding: 10px;
+    padding-top: 25px;
+    font-size: 26px;
+  }
+}
+
+/*Global font hierarchy Helvetica, Calibri, suitable default
+Primary navigation links #4d1d18, remove default underline
+Navigation hover effect #555
+Major heading #87423c, 36 pixels
+Sub-headings #4d1d18, 24 pixels
+Paragraph text 150% line height
+Content links #87423c
+Footer text and links #87423c
+
+     comment in css*/
+
+/* Slide Photo CSV */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev {
+  left: 0px;
+  border-radius: 3px 0 0 3px;
+}
+/* Position the "next button" to the right */
+.next {
+  left: 407.3px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  width: 450px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.row {
+  display: flex;
+  width: 450px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+input.invalid  
+{
+	background: #faa; 
+}

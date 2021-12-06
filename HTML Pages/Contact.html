@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Sorrento by the Sea – Luxury Apartments">
+    <title>Sorrento by the Sea – Luxury Apartments</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="regex.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../Pictures/sorrento_by_the_sea_logo.jpg" alt="Sorrento Logo">
+        </a>
+
+
+        <nav>
+            <ul id="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="Testimonials.html">Testimonials</a></li>
+                <li><a href="ThingsToDo.html">Attractions</a></li>
+                <li><a href="Amenities.html">Amenities</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <h1>Sorrento by the Sea – Contact</h1>
+    <section class="map">
+
+        <h2>Map</h2>
+        <a
+            href="https://www.google.com.au/maps/place/42+Holyrood+Ave,+Sorrento+VIC+3943/@-38.3474183,144.7476206,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad4357b0e516369:0xf1dce538da37e359!8m2!3d-38.3474225!4d144.7498093"><img
+                src="../Pictures/map.jpg" alt="Map" /></a>
+
+    </section>
+    <section class="map">
+        <h2>Address</h2>
+        <p>42 Holyrood Avenue</p>
+        <p>Sorrento VIC 3943</p>
+        <h2>Information and Bookings</h2>
+        <p>0435 123 456</p>
+
+    </section>
+    <section class="contactform">
+        <h2>How to get to Sorrento by the Sea </h2>
+        <p>It is easy to find. From Melbourne, take the Monash Freeway, connect onto the Eastlink heading for Portsea,
+            then onto the Peninsula link to Sorrento.</p>
+        <p>Another option is the scenic drive around the beach. Although longer, it allows you to experience the
+            coastline from Port Melbourne to Sorrento.</p>
+        <p>If you choose to come across on the Queenscliff/Sorrento Ferry, it is only a 2 minute drive from the Ferry
+            Depot.</p>
+        <p>If you are a foot passenger we are happy to meet you at the Sorrento ferry at. Just phone us on 0435 123 456
+            as you arrive.</p>
+    </section>
+    <section>
+        <div class="contact">
+            <h2>Contact Form</h2>
+            <p>Please enter at least one contact method</p>
+            <p>We will repond to all enquires within 3 business days</p>
+            <form onsubmit="return validateAll(this)" action="#" method="post">
+                <ul class="nobullet">
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="Name" placeholder="Your name.."
+                            onblur="return validateName(this,txtNameHelp)" />
+                        <span id="txtNameHelp"></span><br />
+
+                    </li>
+                    <li>
+                        <label for="phone">Contact Phone</label>
+                        <input type="text" id="phone" name="Phone Contact No" class='valid'
+                            placeholder="Your Contact No.." onblur="return validatePhone(this,txtPhoneHelp)" />
+                        <span id="txtPhoneHelp"></span><br />
+
+                    </li>
+                    <li>
+                        <label for="email">Contact Email</label>
+                        <input type="text" id="email" name="Email Contact" class='valid' placeholder="Your Email.."
+                            onblur="return validateEmail(this,txtEmailHelp)" />
+                        <span id="txtEmailHelp"></span><br />
+
+                    </li>
+                    <li>
+                        <label for="enquiry">Enquiry </label>
+
+                    </li>
+                    <li>
+                        <textarea id="enquiry" name="subject" placeholder="Please enter enquiry"
+                            onblur="return validateEnquiry(this,txtEnquiryHelp)"></textarea><br />
+                        <span id="txtEnquiryHelp"></span><br />
+
+
+
+                    </li>
+                    <li>
+                        <input type="button" onclick="submitClick()" value="Submit">
+                        <span id="txtSubmitHelp"></span><br />
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <footer>
+        <a href="https://www.facebook.com/">
+            <img src="../Icons/facebook_small.png" alt="facebook">
+        </a>
+        <a href="https://www.instagram.com/">
+            <img src="../Icons/instagram_small.png" alt="Instgram">
+        </a>
+        <a href="https://www.paypal.com/au/">
+            <img src="../Icons/paypal_small.png" alt="Paypal">
+        </a>
+        <a href="https://twitter.com/">
+            <img src="../Icons/twitter_small.png" alt="Twitter">
+        </a>
+        <a href="https://www.youtube.com">
+            <img src="../Icons/youtube-variation_small.png" alt="Youtube">
+        </a>
+        <p>&copy; 2021 Sorrento by the Sea.</p>
+    </footer>
+
+</body>
+
+</html>
